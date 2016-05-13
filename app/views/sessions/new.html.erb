@@ -1,0 +1,15 @@
+<div class="content">
+  <h2>Login</h2>
+  <%= simple_form_for(:user, url: login_path(@user), defaults: form_defaults, html: { "data-skip-pjax" => true }) do |f| %>
+    <%= f.error_notification %>
+    <div class="form-inputs">
+      <%= f.input :email, required: false, autofocus: true %>
+      <%= f.input :password, required: false %>
+    </div>
+
+    <div class="form-actions pull-right">
+      <%= f.button :submit, "Login", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <div class="clearfix"></div>
+</div>

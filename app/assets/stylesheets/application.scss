@@ -1,0 +1,46 @@
+@import "variables";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,900);
+
+body {
+    padding-top: $navbar-height;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #444;
+
+    label {
+        font-weight: normal;
+
+        abbr[title], abbr[data-original-title] {
+            border-bottom: 0;
+            color: #F07746;
+        }
+    }
+
+    &#logged-out {
+        @include full_width_and_height;
+        padding-top: 0;
+
+        #container-fluid {
+            display:table;
+            width: 400px;
+            height: 100%;
+            margin: 0 auto;
+
+            #sign-in-container {
+                display:table-cell;
+                vertical-align: middle;
+                position: relative;
+
+                .content {
+                    display: block;
+                    padding: 25px;
+                    background-color: #FFF;
+                    border-radius: 0 0 4px 4px;
+                    box-shadow: 0.5px 1px 1px 0.5px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+    }
+}

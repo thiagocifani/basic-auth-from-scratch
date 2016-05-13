@@ -1,0 +1,12 @@
+== README
+
+The test ask to create a basic login form to check if the email and password are present and valid. I could use devise to do all the job for me, but basically, this test
+is for demonstrate how I basically program. I chose to implement it the easiest way possible, from the scratch to accomplish this task.
+
+To run this app you should use the following commands:
+   - bundle
+   - rake db:setup
+
+
+To run the test suite:
+   - rspec spec

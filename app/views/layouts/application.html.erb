@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= javascript_include_tag "application", media: "all" %>
+    <%= stylesheet_optional device_stylesheet, media: "all" %>
+    <%= csrf_meta_tags %>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body id="logged-out">
+    <div id="container-fluid">
+      <div id="sign-in-container">
+        <%= render "shared/notifications" %>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

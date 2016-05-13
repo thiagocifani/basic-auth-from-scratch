@@ -1,0 +1,12 @@
+$navbar-height: 50px;
+$bottombar-height: 0;
+$ultragray: #4D5250;
+$darkgray: #F1F1F1;
+
+@mixin full_width_and_height {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
