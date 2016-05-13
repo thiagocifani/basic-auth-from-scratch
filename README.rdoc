@@ -10,3 +10,7 @@ To run this app you should use the following commands:
 
 To run the test suite:
    - rspec spec
+
+
+user: user@email.com
+password: 123456789
